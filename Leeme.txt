@@ -1,0 +1,18 @@
+Comandos Store Dominicode
+
+ng new store 
+ng g c shared/components/header
+npm i json-server
+npm run serverAPI - "scripts":{"serverAPI": "json-server --watch server/db.json --port 3000"} (package.json)
+ng add @angular/material
+ng g m pages/products -m=app --route products
+ng g c pages\products\product --skip-tests
+ng g s pages/products/services/products --skip-tests
+
+
+Correcciones
+
+- Quitar sede de tienda si se escoge Delivery.
+- Crear Home de tienda antes de lista de productos y enlazar.
+- Terminar pagina de Gracias por tu compra y mostrar resumen de pedido.
+- Subir proyecto a Git-Lab.

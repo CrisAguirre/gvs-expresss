@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center"></ion-title>
+    <ion-buttons slot="end">
+      <ion-button  routerLink="/">
+        <ion-icon slot="icon-only" name="close" class="color-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content class="ion-padding">
+ 
+  <ion-row>
+    <ion-col size="12" size-sm="10" offset-sm="1" size-md="8" offset-md="2" size-lg="6" offset-lg="3" size-xl="4"
+      offset-xl="4">
+      <span class="center-spam">
+        <img src="../../assets/images/BlkLog.png" /></span>
+        
+        <ion-card-title class="ion-text-center"><p>¡Bienvenido!</p></ion-card-title>
+       
+        <small class="ion-text-justify"><p>Ingresa tu correo electrónico o NIT y tu contraseña.</p></small>
+        <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+          <ion-label position="stacked" class="ion-text-center">Email / NIT</ion-label>
+          <ion-input type="email" name="email" style="border: 1px solid lightgray; border-radius:5px;" formControlName="usuario"></ion-input>
+          <ion-label position="stacked" class="ion-text-center">Contraseña</ion-label>
+          <ion-input type="password" name="password" style="border: 1px solid lightgray; border-radius:5px;"  formControlName="clave"></ion-input>
+        <br>
+        <ion-button color="primary" type="submit" expand="block">Ingresar</ion-button>
+        <ion-button *ngIf="plataforma === 'IOS'" expand="block" color="secondary" (click)="register()">Registrarse</ion-button>
+        <ion-button *ngIf="plataforma !== 'IOS'" expand="block" color="secondary" href="https://gvscolombia.com/registro">Registrarse</ion-button>
+      </form>
+    </ion-col>
+  </ion-row>
+  
+  <ion-footer class="ion-text-center">
+    <br>
+    <span class="text-foot">
+        Todos los derechos reservados © GVS Colombia SAS 2022
+    </span>
+  </ion-footer>
+ 
+</ion-content>

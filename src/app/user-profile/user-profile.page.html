@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-title class="titulo">Perfil de Usuario</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-col size="12" size-sm="10" offset-sm="1" size-md="8" offset-md="2" size-lg="6" offset-lg="3" size-xl="4" offset-xl="4">
+      <ion-row class="pictures">
+        <ion-col size-sm="6">
+          <div  style="width:110px; height: 110px; border-radius: 75px; overflow:hidden;" >
+            <img [src]=UserImg/>
+          </div>    
+        </ion-col>
+        <ion-col size="6">
+          <ngx-qrcode [value]="profile?.Cardcode"></ngx-qrcode>
+        </ion-col>
+      </ion-row>
+      <ion-card-content>
+        <div class="profile-info">
+          <ion-item>
+            <ion-label class="etiqueta">Nombre:</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label class="texts">{{profile?.NombreYApellido}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label position="staked" class="etiqueta">E-mail: </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label class="texts">{{profile?.CorreoFacturaElectronica}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label position="staked" class="etiqueta">Identificación:</ion-label>
+            <ion-label class="texts">{{profile?.Cardcode}}</ion-label>
+          </ion-item>
+          <br>
+          <ion-button expand="block" (click)="logout()">Salir</ion-button>
+
+        </div>
+      </ion-card-content>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Lista de Productos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="_dismiss()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let product of productLst">
+      <ion-avatar slot="start">
+        <img [src]=product.img/>
+      </ion-avatar>
+      <ion-label>
+        <p>Nombre: {{product.name}}</p>
+        <h3>Cantidad: {{product.amount}}</h3>
+        <h2>Precio: {{product.price | currency}}</h2>
+      </ion-label>
+      <ion-icon slot="end" name="close-circle-outline" label="Eliminar producto de lista" (click)="deleteItem(product)"></ion-icon>
+    </ion-item>
+    <small>
+      <ul>
+        <li>Los precios incluyen IVA</li>
+        <li>Los precios mostrados en esta lista son los precios del momento de la consulta del producto.</li>
+        <li>Los precios aquí mostrados son referenciales y pueden cambiar sin previo avíso.</li>
+
+      </ul> </small>
+  </ion-list>
+
+  <ion-footer>
+    <ion-row>
+      <ion-col><h4 class="head-color">Total:</h4></ion-col>
+      <ion-col><h4 class="head-color">{{totalList | currency}}</h4></ion-col>
+    </ion-row>
+  </ion-footer>  
+
+  <ion-button expand="block" color="secondary" (click)="resetLst()">Limpiar Lista</ion-button>
+</ion-content>

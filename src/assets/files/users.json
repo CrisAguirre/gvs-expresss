@@ -1,0 +1,29 @@
+{
+    "data":[
+        {
+            "name": "Han Solo",
+            "state": "Look, Fucking Kid...",
+            "description":"Look, Fucking Kid...",
+            "image":"avatar-han.png"
+        },
+        {
+            "name": "c3pIo",
+            "state": "Ayayayayay...",
+            "description":"Gold Metal Jacket",
+            "image":"avatar-frodo.jpg"
+        },
+        {
+            "name": "Gollum",
+            "state": "My preciosus",
+            "description":"Idiot bastard",
+            "image":"avatar-gollum.jpg"
+        },
+        {
+            "name": "Alexa",
+            "state": "Crush the francaise",
+            "description":"Handsome",
+            "image":"avatar-leia.png"
+        }
+        
+    ]
+}

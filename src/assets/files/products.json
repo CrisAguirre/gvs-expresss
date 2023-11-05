@@ -1,0 +1,19 @@
+{
+    "data":[
+        {
+            "id":1,
+            "image1": "1.png",
+            "image2": "2.png",
+            "image3": "3.png",
+            "image4": "4.png",
+            "nombre": "DH-SD59225UN-HNI",
+            "precio":"190.000",
+            "preciodescuento":"175.000",
+            "cantidad": "10",
+            "linea": "CCTV",
+            "descripcion": "DOMO PTZ IP 2MP@60PFS ZOOM 25X TILT -15°~90° WDR H.265+ IP66 IR 150M POE+ AUTOTRACKING INCL. SOPORTE.",
+            "caracteristicas": "Tipo: PTZ IP<br>Tecnologia: IP<br>Serie: IP PTZ<br>Modelo: Domo<br>Material: Metal<br>Resolución: 2MP@60FPS<br>Tamaño Cupula: 186mm<br>Sensor de Imagen: Sensor 1/2.8``<br>Rango Pan/Tilt: Pan 0°~360° Continuo, Tilt -15°~90°<br>Compresión: H264, H264+, H265, H265+<br>IR: IR 150m<br>Protección: IP66<br>E/S Audio: Mic y speaker RCA<br>E/S Alarma: E/S Alarma 2/1<br>Características: PoE, PoE+, WDR 120dB, IA, StarLight, MicroSD<br>Analíticas: 4 analiticas, Auto tracking, Detección facial, Mapa de Calor<br>Alimentacion: 24VDC<br>Consumo: 23W<br>Fuente de poder mínina: 1ADOMO PTZ IP 2MP@60PFS ZOOM 25X TILT -15°~90° WDR H.265+ IP66 IR 150M POE+ AUTOTRACKING INCL. SOPORTE.</p>",
+        }
+    ]
+}
+
